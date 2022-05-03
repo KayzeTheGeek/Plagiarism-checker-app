@@ -1,0 +1,32 @@
+.result_container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  border-bottom: 1px solid black;
+}
+
+.result_container > * {
+  flex: 0 1 50%;
+}
+
+.plag_level {
+  height: 13px;
+  background-color: rgb(207, 207, 207);
+}
+.progress {
+  height: 13px;
+  background-color: black;
+  width: 20%;
+}
+
+.file_name {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+.file_name > span {
+  font-size: 0.6em;
+  margin-left: 5px;
+  font-weight: normal;
+  border-left: solid 1px black;
+  padding: 5px;
+}

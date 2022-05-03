@@ -1,0 +1,21 @@
+{% extends "base.html" %} 
+{% load static %} 
+{% block style %}<link
+  rel="stylesheet"
+  href="{% static 'global.css' %}"
+/><link rel="stylesheet" href="{% static 'display.css' %}" />{% endblock %}
+{% block page_content %} 
+<h1 class="header">plagiarism Result</h1>
+{% if data|length > 0 %}
+{% for d in data %}
+<div class="result_container">
+  <p class="file_name">{{d.name}} <span>{{d.rate}} plagiarized</span></p>
+  <div class="plag_level">
+      <div class="progress" style="width: {{d.rate}};"></div>
+  </div>
+</div>
+{% endfor %}
+{% else %}
+<div><h3>No file to compare with. Your file is safe from plagiarism</h3></div>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,40 @@
+.form_input_field {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+}
+
+input[type="file"] {
+  text-align: center;
+  border: none;
+  align-items: center;
+  padding: 20px;
+}
+
+.upload_button {
+  padding: 15px 20px 15px;
+  background: rgb(89, 89, 230);
+  color: #fff;
+  border: none;
+  font-size: 1.2em;
+}
+
+.upload_button:hover {
+  cursor: pointer;
+}
+
+.button_container {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.delete_button {
+  background-color: red;
+}
+
+.modal{
+    display: flex;
+    justify-content: center;
+}
